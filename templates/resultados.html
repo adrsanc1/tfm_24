@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de la Predicción</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resultados de la Predicción</h1>
+        <!-- Mensaje con los tipos de cáncer que se pueden predecir según el fluido -->
+        <div class="alert alert-info" role="alert">
+            {{ mensaje }}
+        </div>
+        <br><br>
+        <a href="/">Volver a la página principal</a>
+        <br><br>
+        <a href="/descargar" class="button">Descargar resultados en CSV</a>
+        <div class="resultados">
+            {{ resultados|safe }}
+        </div>
+        <a href="/descargar" class="button">Descargar resultados en CSV</a>
+        <br><br>
+        <a href="/">Volver a la página principal</a>
+    </div>
+</body>
+</html>
+

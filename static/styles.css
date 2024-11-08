@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+
+/* Estilo para los mensajes de error */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+li.success {
+    color: green;
+    margin-bottom: 10px;
+}
+
+form {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column; /* Esto apila los elementos verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+input[type="file"] {
+    padding: 10px;
+    margin: 10px;
+    display: block;  
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;     /* Margen superior opcional */
+    align-self: center;    /* Centra solo el botón */
+    display: block; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Margen adicional entre los mensajes y el botón */
+form {
+    margin-top: 50px;
+}
+
+.table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}

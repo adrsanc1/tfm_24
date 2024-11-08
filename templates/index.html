@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Tipo de Cáncer</title>
+
+    <!-- Enlace al archivo CSS ubicado en la carpeta static -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Suba archivo CSV para predecir el tipo de cáncer</h1>
+        <p style="color: #555;">
+            Se recomienda que el archivo tenga una columna llamada <strong>'Sample'</strong> que identifique a cada muestra.
+        </p>
+        <p style="color: #555;">
+            Necesario columna llamada <strong>'Fluid'</strong> con el valor de 'plasma' o 'serum' para realizar la predicción.
+        </p>
+
+        <!-- Formulario para subir archivo -->
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv" required>
+            
+            <!-- Aquí irán los mensajes de error -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <ul>
+                        {% for category, message in messages %}
+                            <li class="{{ category }}">{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+    
+            <button type="submit">Predecir</button>
+
+         </form>
+
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+,Modelo,Mejor Score,Mejores Parámetros,Cantidad variables
+0,RandomForest,0.898229583095374,"{'max_depth': 18, 'n_estimators': 300}",22
+1,SVM,0.8454978107747954,"{'C': 20, 'gamma': 1}",22
+2,GradientBoosting,0.8591281172663241,{'n_estimators': 200},22
+3,kNN,0.8514372739387017,"{'n_neighbors': 2, 'weights': 'distance'}",22
+4,RandomForest,0.9139158576051779,"{'max_depth': 16, 'n_estimators': 200}",24
+5,SVM,0.8611460118027793,"{'C': 20, 'gamma': 1}",24
+6,GradientBoosting,0.8611079383209596,{'n_estimators': 100},24
+7,kNN,0.8338092518560822,"{'n_neighbors': 2, 'weights': 'distance'}",24
+8,RandomForest,0.9119741100323624,"{'max_depth': 12, 'n_estimators': 300}",26
+9,SVM,0.8650675804302302,"{'C': 20, 'gamma': 1}",26
+10,GradientBoosting,0.8630496858937751,{'n_estimators': 200},26
+11,kNN,0.8318294308014469,"{'n_neighbors': 2, 'weights': 'distance'}",26
